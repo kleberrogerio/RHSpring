@@ -1,4 +1,4 @@
-package br.gov.sp.fatec.controllers;
+package br.gov.sp.fatec.RHSpring.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +8,7 @@ public class IndexController {
 	
 	@RequestMapping("/")
 	public String index() {
+		System.out.println("Chamou o Index");
 		return "index";
 	}
 
